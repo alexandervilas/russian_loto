@@ -1,3 +1,6 @@
+
+import random
+
 #Это будет простая игра в русское лото
 def create_dict_with_lists(num_lists):
     """
@@ -8,6 +11,21 @@ def create_dict_with_lists(num_lists):
         result_dict[f'list_{i+1}'] = []
     return result_dict
 
+
+# def create_loto_card():
+#     card = []
+
+#     for i in range(3):
+#         row = random.sample(range(1, 91), 5)
+#         card.append(row)
+
+# или
+
+import random
+
+def generate_card():
+card = random.sample(range(1, 91), 9)
+return card
 
 my_dict = create_dict_with_lists(3)
 print(my_dict)
