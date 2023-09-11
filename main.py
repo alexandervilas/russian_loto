@@ -1,4 +1,12 @@
 #Это будет простая игра в русское лото
+
+# Савельев
+import random
+
+def  generate_card():
+    card = random.sample(range(1, 91), 15)
+    return card
+
 def create_dict_with_lists(num_lists):
     """
    
@@ -11,4 +19,3 @@ def create_dict_with_lists(num_lists):
 
 my_dict = create_dict_with_lists(3)
 print(my_dict)
-
