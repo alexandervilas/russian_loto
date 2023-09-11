@@ -2,6 +2,12 @@
 import random
 
 #Это будет простая игра в русское лото
+
+# Функция, которая должна показывать карточку игрока, при вводу двух аргументов
+def show_card(player, card):
+    card = player
+    print("Карточка игрока" + " №" + player + "\n" + card)
+
 def create_dict_with_lists(num_lists):
     """
    
@@ -29,4 +35,5 @@ return card
 
 my_dict = create_dict_with_lists(3)
 print(my_dict)
+
 
